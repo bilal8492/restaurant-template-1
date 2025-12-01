@@ -4,6 +4,7 @@
 
 let restaurantData = null;
 let allMenuItems = [];
+let cart = JSON.parse(localStorage.getItem('restaurantCart')) || [];
 
 // ==========================================
 // FETCH AND LOAD DATA FROM JSON
@@ -116,7 +117,12 @@ function displayMenuItems(items) {
             <div class="menu-item-content">
                 <h3 class="menu-item-name">${item.name}</h3>
                 <p class="menu-item-description">${item.description}</p>
-                <p class="menu-item-price">${item.price}</p>
+                <div class="menu-item-footer">
+                    <p class="menu-item-price">${item.price}</p>
+                    <button class="add-to-cart-btn" data-item='${JSON.stringify(item)}'>
+                        <i class="fas fa-plus"></i> Add
+                    </button>
+                </div>
             </div>
         `;
         menuContainer.appendChild(menuItem);
@@ -137,11 +143,211 @@ function filterMenu(category) {
         const filteredItems = allMenuItems.filter(item => item.category === category);
         displayMenuItems(filteredItems);
     }
+    
+    attachAddToCartListeners();
 }
 
 // ==========================================
-// INITIALIZE GALLERY
+// SEARCH FUNCTIONALITY
 // ==========================================
+
+function setupSearch() {
+    const searchInput = document.getElementById('menuSearch');
+    if (searchInput) {
+        searchInput.addEventListener('input', (e) => {
+            const searchTerm = e.target.value.toLowerCase();
+            const filtered = allMenuItems.filter(item =>
+                item.name.toLowerCase().includes(searchTerm) ||
+                item.description.toLowerCase().includes(searchTerm)
+            );
+            displayMenuItems(filtered);
+            attachAddToCartListeners();
+        });
+    }
+}
+
+// ==========================================
+// SHOPPING CART FUNCTIONALITY
+// ==========================================
+
+function attachAddToCartListeners() {
+    const addToCartBtns = document.querySelectorAll('.add-to-cart-btn');
+    addToCartBtns.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            const item = JSON.parse(btn.getAttribute('data-item'));
+            addToCart(item, btn);
+        });
+    });
+}
+
+function addToCart(item, btnElement) {
+    const existingItem = cart.find(cartItem => cartItem.name === item.name);
+    
+    if (existingItem) {
+        existingItem.quantity += 1;
+    } else {
+        cart.push({ ...item, quantity: 1 });
+    }
+    
+    saveCart();
+    updateCartUI();
+    showCartNotification(item.name);
+    animateCartIcon();
+    if (btnElement) {
+        animateAddButton(btnElement);
+    }
+}
+
+function removeFromCart(itemName) {
+    cart = cart.filter(item => item.name !== itemName);
+    saveCart();
+    updateCartUI();
+}
+
+function updateCartQuantity(itemName, quantity) {
+    const item = cart.find(cartItem => cartItem.name === itemName);
+    if (item) {
+        item.quantity = Math.max(1, quantity);
+        saveCart();
+        updateCartUI();
+    }
+}
+
+function saveCart() {
+    localStorage.setItem('restaurantCart', JSON.stringify(cart));
+}
+
+function updateCartUI() {
+    const cartCount = document.getElementById('cartCount');
+    const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+    cartCount.textContent = totalItems;
+    
+    // Update cart modal
+    const cartItemsContainer = document.getElementById('cartItems');
+    const cartTotal = document.getElementById('cartTotal');
+    
+    if (cart.length === 0) {
+        cartItemsContainer.innerHTML = '<p class="empty-cart">Your cart is empty</p>';
+        cartTotal.textContent = '₹0';
+        return;
+    }
+    
+    cartItemsContainer.innerHTML = cart.map(item => {
+        const priceNum = parseInt(item.price.replace('₹', ''));
+        const itemTotal = priceNum * item.quantity;
+        return `
+            <div class="cart-item">
+                <div class="cart-item-info">
+                    <h4>${item.name}</h4>
+                    <p class="cart-item-price">${item.price} x ${item.quantity} = ₹${itemTotal}</p>
+                </div>
+                <div class="cart-item-controls">
+                    <button class="qty-btn" onclick="updateCartQuantity('${item.name}', ${item.quantity - 1})">-</button>
+                    <span class="qty-display">${item.quantity}</span>
+                    <button class="qty-btn" onclick="updateCartQuantity('${item.name}', ${item.quantity + 1})">+</button>
+                    <button class="remove-btn" onclick="removeFromCart('${item.name}')">
+                        <i class="fas fa-trash"></i>
+                    </button>
+                </div>
+            </div>
+        `;
+    }).join('');
+    
+    // Calculate total
+    const total = cart.reduce((sum, item) => {
+        const priceNum = parseInt(item.price.replace('₹', ''));
+        return sum + (priceNum * item.quantity);
+    }, 0);
+    cartTotal.textContent = '₹' + total;
+}
+
+function sendOrderToWhatsApp() {
+    if (cart.length === 0) {
+        alert('Your cart is empty!');
+        return;
+    }
+    
+    const restaurantPhone = restaurantData.restaurant.phone.replace(/[^\d]/g, '');
+    let message = `*Order from ${restaurantData.restaurant.name}*\n\n`;
+    message += `*Items:*\n`;
+    
+    let total = 0;
+    cart.forEach(item => {
+        const priceNum = parseInt(item.price.replace('₹', ''));
+        const itemTotal = priceNum * item.quantity;
+        total += itemTotal;
+        message += `• ${item.name} x${item.quantity} = ₹${itemTotal}\n`;
+    });
+    
+    message += `\n*Total Amount: ₹${total}*\n\n`;
+    message += `Please confirm this order. Thank you!`;
+    
+    const whatsappURL = `https://wa.me/${restaurantPhone}?text=${encodeURIComponent(message)}`;
+    window.open(whatsappURL, '_blank');
+}
+
+function showCartNotification() {
+    const notification = document.createElement('div');
+    notification.className = 'cart-notification';
+    notification.innerHTML = '<i class="fas fa-check"></i> Added to cart!';
+    document.body.appendChild(notification);
+    
+    setTimeout(() => {
+        notification.classList.add('show');
+    }, 10);
+    
+    setTimeout(() => {
+        notification.classList.remove('show');
+        setTimeout(() => notification.remove(), 400);
+    }, 3000);
+}
+
+// ==========================================
+// ANIMATION FUNCTIONS FOR BETTER UX
+// ==========================================
+
+function animateAddButton(btnElement) {
+    if (!btnElement) return;
+    
+    // Add visual feedback
+    btnElement.classList.add('added');
+    
+    // Reset after animation
+    setTimeout(() => {
+        btnElement.classList.remove('added');
+    }, 1200);
+}
+
+function animateCartIcon() {
+    const cartIcon = document.getElementById('cartIcon');
+    if (!cartIcon) return;
+    
+    cartIcon.classList.add('bouncing');
+    setTimeout(() => {
+        cartIcon.classList.remove('bouncing');
+    }, 500);
+}
+
+// ==========================================
+// DARK MODE FUNCTIONALITY
+// ==========================================
+
+function setupDarkMode() {
+    const themeToggle = document.getElementById('themeToggle');
+    const isDarkMode = localStorage.getItem('darkMode') === 'true';
+    
+    if (isDarkMode) {
+        document.body.classList.add('dark-mode');
+        themeToggle.innerHTML = '<i class="fas fa-sun"></i>';
+    }
+    
+    themeToggle.addEventListener('click', () => {
+        document.body.classList.toggle('dark-mode');
+        const isDark = document.body.classList.contains('dark-mode');
+        localStorage.setItem('darkMode', isDark);
+        themeToggle.innerHTML = isDark ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
+    });
+}
 
 function initializeGallery() {
     const { gallery } = restaurantData;
@@ -262,21 +468,39 @@ function setupNavigation() {
 // ==========================================
 
 function setupModal() {
-    const modal = document.getElementById('imageModal');
-    const closeBtn = document.querySelector('.close');
+    const imageModal = document.getElementById('imageModal');
+    const cartModal = document.getElementById('cartModal');
+    const closeButtons = document.querySelectorAll('.modal .close');
+    const cartIcon = document.getElementById('cartIcon');
+    const checkoutBtn = document.getElementById('checkoutBtn');
     
-    closeBtn.addEventListener('click', closeImageModal);
+    closeButtons.forEach(btn => {
+        btn.addEventListener('click', (e) => {
+            e.target.closest('.modal').style.display = 'none';
+        });
+    });
+    
+    cartIcon.addEventListener('click', () => {
+        cartModal.style.display = 'block';
+        updateCartUI();
+    });
+    
+    checkoutBtn.addEventListener('click', sendOrderToWhatsApp);
     
     window.addEventListener('click', (event) => {
-        if (event.target === modal) {
-            closeImageModal();
+        if (event.target === imageModal) {
+            imageModal.style.display = 'none';
+        }
+        if (event.target === cartModal) {
+            cartModal.style.display = 'none';
         }
     });
     
     // Close modal on Escape key
     document.addEventListener('keydown', (event) => {
         if (event.key === 'Escape') {
-            closeImageModal();
+            imageModal.style.display = 'none';
+            cartModal.style.display = 'none';
         }
     });
 }
@@ -370,6 +594,18 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Setup category filter after menu is initialized
         setupCategoryFilter();
+        
+        // Setup search functionality
+        setupSearch();
+        
+        // Setup dark mode
+        setupDarkMode();
+        
+        // Attach add to cart listeners
+        attachAddToCartListeners();
+        
+        // Initialize cart UI
+        updateCartUI();
         
         // Setup scroll animations
         setupScrollAnimations();
