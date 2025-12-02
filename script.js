@@ -112,7 +112,7 @@ function displayMenuItems(items) {
         menuItem.style.animationDelay = `${index * 0.1}s`;
         menuItem.innerHTML = `
             <div class="menu-item-image">
-                <img src="${item.image}" alt="${item.name}" crossorigin="anonymous" onerror="this.src='https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D'">
+                <img src="${item.image}" alt="${item.name}"  onerror="this.src='https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D'">
             </div>
             <div class="menu-item-content">
                 <h3 class="menu-item-name">${item.name}</h3>

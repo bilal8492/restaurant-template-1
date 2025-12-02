@@ -2,7 +2,7 @@
   "restaurant": {
     "name": "Spice Aroma",
     "tagline": "Authentic Flavours, Made Fresh",
-    "heroImage": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+    "heroImage": "https://www.taalrestaurant.co.uk/taal/wp-content/uploads/2019/04/taal_luxury_food900.jpg",
     "about": "Welcome to Spice Aroma, where culinary tradition meets modern innovation. Since 2015, we have been delighting our guests with authentic recipes passed down through generations, combined with contemporary cooking techniques. Our mission is to bring you the finest flavours of traditional cuisine, prepared fresh daily using only the highest quality ingredients. Every dish tells a story, and we invite you to be part of our culinary journey.",
     "address": "MG Road, Mumbai, India",
     "phone": "+91 7977357296",
@@ -24,37 +24,37 @@
         {
           "name": "Paneer Tikka",
           "price": "₹250",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://media.istockphoto.com/id/1267019739/photo/close-look-at-delicious-and-freshly-cooked-paneer-tikka-grilled-with-onions-and-bell-pepper.webp?a=1&b=1&s=612x612&w=0&k=20&c=1QghxNcMoJ_pNQTzDVecRwXiguZ0fyU18zKhBXcZbEQ=",
           "description": "Grilled cottage cheese marinated in aromatic spices and yogurt. Served with mint chutney and lemon."
         },
         {
           "name": "Samosa (3 pieces)",
           "price": "₹120",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://media.istockphoto.com/id/2148933061/photo/selective-focus-samosa-spiced-potato-filled-pastry-crispy-savory-popular-indian-snack-with.webp?a=1&b=1&s=612x612&w=0&k=20&c=oGvjgDIBF6mZr_66QT2ZMPeZ2HT9I_sxCuLiZy1mjnM=",
           "description": "Crispy pastry triangles filled with spiced potatoes and peas. Traditional favorite with tamarind chutney."
         },
         {
           "name": "Chicken 65",
           "price": "₹280",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://media.istockphoto.com/id/1265209311/photo/fried-chicken-kebab-or-kabab.webp?a=1&b=1&s=612x612&w=0&k=20&c=k6elu7ogARiXzPbHTFtCqEg2A4HQ1w-FR0kbpM8Hc_Q=",
           "description": "Spicy deep-fried chicken pieces coated with aromatic masala. A signature starter that's always in demand."
         },
         {
           "name": "Vegetable Pakora",
           "price": "₹180",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://media.istockphoto.com/id/177314242/photo/vegetable-pakora.webp?a=1&b=1&s=612x612&w=0&k=20&c=4Fon-Dxb2pxtLxVugKpG1V9w49wsJzbKIRK4FNmdV1A=",
           "description": "Mixed vegetables battered and deep-fried until golden. Served with mint yogurt dip."
         },
         {
           "name": "Tandoori Prawns",
           "price": "₹350",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2025/02/tandoori-shrimp-recipe.jpg",
           "description": "Fresh prawns marinated in traditional tandoori spices and grilled to perfection."
         },
         {
           "name": "Spring Rolls",
           "price": "₹150",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT2vptKoESjJI6XNQtnkZMySzOzQ4S7OyIt-g&s",
           "description": "Crispy rolls filled with vegetables and served with sweet and sour sauce."
         }
       ]
@@ -65,37 +65,37 @@
         {
           "name": "Butter Chicken",
           "price": "₹380",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.indianhealthyrecipes.com/wp-content/uploads/2022/07/chicken-butter-masala-recipe.jpg",
           "description": "Tender chicken in a creamy tomato-based sauce with hints of fenugreek. Served with basmati rice and naan."
         },
         {
           "name": "Biryani (Chicken)",
           "price": "₹320",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.cubesnjuliennes.com/wp-content/uploads/2020/07/Chicken-Biryani-Recipe.jpg",
           "description": "Fragrant basmati rice cooked with tender chicken and traditional spices. A complete meal on its own."
         },
         {
           "name": "Palak Paneer",
           "price": "₹280",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.indianveggiedelight.com/wp-content/uploads/2017/10/palak-paneer-recipe-featured.jpg",
           "description": "Cottage cheese cubes in a creamy spinach sauce. A classic vegetarian favorite, light yet satisfying."
         },
         {
           "name": "Lamb Rogan Josh",
           "price": "₹420",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://assets.farmison.com/images/recipe-detail-1380/78170-lamb-rogan-josh.jpg",
           "description": "Tender lamb pieces in a aromatic yogurt-based gravy with warm spices. Slow-cooked for maximum flavor."
         },
         {
           "name": "Chole Bhature",
           "price": "₹220",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT0K7L4XEaE901F4TuLgecvdUGX-8Im_IjM2Q&s",
           "description": "Fluffy fried bread served with spiced chickpea curry. A hearty, beloved North Indian classic."
         },
         {
           "name": "Fish Curry",
           "price": "₹380",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://vismaifood.com/storage/app/uploads/public/daa/96d/7bc/thumb__700_0_0_0_auto.jpg",
           "description": "Fresh fish cooked in coconut-based sauce with aromatic spices. Light, flavorful, and authentic."
         }
       ]
@@ -106,37 +106,37 @@
         {
           "name": "Naan",
           "price": "₹60",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://foodess.com/wp-content/uploads/2023/02/Butter-Naan-3.jpg",
           "description": "Soft, fluffy Indian bread baked in tandoor. Perfect for scooping curries."
         },
         {
           "name": "Garlic Naan",
           "price": "₹80",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://allwaysdelicious.com/wp-content/uploads/2022/04/garlic-butter-naan-4.jpg",
           "description": "Naan topped with fresh garlic and herbs. Aromatic and delicious."
         },
         {
           "name": "Roti",
           "price": "₹40",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.simplyrecipes.com/thmb/kfKdjryQIBH-MkGQXqN9mSfu-Yc=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc()/Simply-Recipes-Roti-LEAD-3-38a1295fbb884aaabd42a34bcad9ea82.jpg",
           "description": "Thin, unleavened whole wheat bread. A daily essential with every meal."
         },
         {
           "name": "Kulcha",
           "price": "₹100",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqZMiM_5-R107zVCjpe9pAShgJ_LmX8a_HRA&s",
           "description": "Stuffed Indian bread with paneer and herbs. Rich and indulgent."
         },
         {
           "name": "Puri",
           "price": "₹50",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/33/Fluffy_Poori.JPG/960px-Fluffy_Poori.JPG",
           "description": "Deep-fried, puffy Indian bread. Light as air and perfect with any curry."
         },
         {
           "name": "Paratha",
           "price": "₹90",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://cdn.apartmenttherapy.info/image/upload/f_jpg,q_auto:eco,c_fill,g_auto,w_1500,ar_4:3/k%2FPhoto%2FRecipe%20Ramp%20Up%2F2022-02-Paratha%2Fparatha-stacked-top_view",
           "description": "Layered Indian flatbread cooked with ghee. Rich and satisfying."
         }
       ]
@@ -147,37 +147,37 @@
         {
           "name": "Gulab Jamun",
           "price": "₹120",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://static.toiimg.com/thumb/63799510.cms?imgsize=1091643&width=800&height=800",
           "description": "Soft milk solids balls in aromatic sugar syrup infused with rose water. A timeless favorite."
         },
         {
           "name": "Kheer",
           "price": "₹100",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.nestleprofessional.in/sites/default/files/2022-07/Rice-Kheer.jpg",
           "description": "Creamy rice pudding flavored with cardamom and topped with nuts. Comfort in a bowl."
         },
         {
           "name": "Jalebi",
           "price": "₹80",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://s3-ap-south-1.amazonaws.com/betterbutterbucket-silver/shubhi-mishra20171004002157988.jpeg",
           "description": "Crispy, spiral-shaped sweet soaked in sugar syrup. A colorful treat."
         },
         {
           "name": "Rasmalai",
           "price": "₹140",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://prashantcorner.com/cdn/shop/files/RasmalaiSR-2.png?v=1720595089&width=1946",
           "description": "Soft cheese discs in sweetened, cardamom-flavored milk. Delicate and heavenly."
         },
         {
           "name": "Mango Lassi",
           "price": "₹130",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.yellowthyme.com/wp-content/uploads/2023/03/Mango-Lassi-08589.jpg",
           "description": "Creamy yogurt blended with fresh mango puree. Refreshing and satisfying."
         },
         {
           "name": "Paan Kulfi",
           "price": "₹90",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://images.squarespace-cdn.com/content/v1/5cef7b136434550001a53d10/1559786477599-FNOII2MXVLS3FT85RDYZ/paanpopsicles.jpg",
           "description": "Traditional frozen dessert with essence of betel leaf. A unique cold treat."
         }
       ]
@@ -188,37 +188,37 @@
         {
           "name": "Masala Tea (Chai)",
           "price": "₹50",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://cdn.shopify.com/s/files/1/0758/6929/0779/files/Masala_Tea_-_Annams_Recipes_Shop_2_480x480.jpg?v=1732347934",
           "description": "Hot spiced tea with milk and aromatic spices. The perfect companion to any meal."
         },
         {
           "name": "Mango Lassi",
           "price": "₹130",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://cdn.indiaphile.info/wp-content/uploads/2014/05/mangolassi-3908.jpg?width=1200&crop_gravity=center&aspect_ratio=auto&q=75",
           "description": "Creamy yogurt blended with fresh mango. A cool refreshment for warm days."
         },
         {
           "name": "Iced Tea",
           "price": "₹60",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://images.themodernproper.com/production/posts/IcedTea_8.jpg?w=960&h=960&q=82&fm=jpg&fit=crop&dm=1716306653&s=e7e37b87126eaafc95ddb53435ba341e",
           "description": "Refreshing cold tea with lemon. A simple, classic beverage."
         },
         {
           "name": "Sugarcane Juice",
           "price": "₹80",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://www.theauric.com/cdn/shop/articles/fresh-squeezed-sugar-cane-juice-with-fresh-cane-sliced-isolated-white-background_4000x.jpg?v=1647859027",
           "description": "Fresh, natural sugarcane juice. Sweet, energizing, and healthy."
         },
         {
           "name": "Fresh Lemonade",
           "price": "₹70",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIZKj7hitzLIYc6TZ6KwFCSRkgXv77cOkkDA&s",
           "description": "Tangy lemonade made from fresh lemons. Perfect for quenching your thirst."
         },
         {
           "name": "Coffee",
           "price": "₹80",
-          "image": "https://plus.unsplash.com/premium_photo-1673108852141-e8c3c22a4a22?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Zm9vZHxlbnwwfHwwfHx8MA%3D%3D",
+          "image": "https://plus.unsplash.com/premium_photo-1674327105076-36c4419864cf?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8bG92ZSUyMGNvZmZlZXxlbnwwfHwwfHx8MA%3D%3D",
           "description": "Rich, aromatic coffee. A warm drink for coffee lovers."
         }
       ]
